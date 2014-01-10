@@ -18,10 +18,10 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'book';
   $field_group->mode = 'form';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_alumni_story';
   $field_group->data = array(
     'label' => 'Alumni Name',
-    'weight' => '7',
+    'weight' => '9',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -39,6 +39,35 @@ function gsb_feature_book_ct_field_group_info() {
     ),
   );
   $export['group_alumni_name|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_alumni_story|node|book|form';
+  $field_group->group_name = 'group_alumni_story';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Alumni story',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_academic_degrees',
+      1 => 'field_year',
+      2 => 'group_alumni_name',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_alumni_story|node|book|form'] = $field_group;
 
   return $export;
 }
