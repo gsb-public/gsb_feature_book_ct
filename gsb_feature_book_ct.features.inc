@@ -26,7 +26,7 @@ function gsb_feature_book_ct_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Document Title'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

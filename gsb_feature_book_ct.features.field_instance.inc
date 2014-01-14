@@ -37,7 +37,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_academic_area_unlimited',
     'label' => 'Academic Area',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -48,7 +48,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -96,7 +96,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 8,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -192,7 +192,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 24,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -224,7 +224,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
     'label' => 'BI Topic',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -235,7 +235,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -278,7 +278,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -323,7 +323,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 16,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -407,7 +407,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_first_name',
     'label' => 'First Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'linkit' => array(
         'enable' => 0,
@@ -458,7 +458,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
     'label' => 'Book jacket',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -522,7 +522,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 20,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -554,7 +554,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_last_name',
     'label' => 'Last Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'linkit' => array(
         'enable' => 0,
@@ -636,7 +636,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -700,7 +700,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 12,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -764,7 +764,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 23,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -1012,7 +1012,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 25,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -1055,7 +1055,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 18,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -1153,7 +1153,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 22,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -1198,7 +1198,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 21,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1258,7 +1258,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 7,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
