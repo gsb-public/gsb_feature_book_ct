@@ -54,8 +54,8 @@ function gsb_feature_book_ct_field_group_info() {
     'weight' => '12',
     'children' => array(
       0 => 'field_academic_degrees',
-      1 => 'field_year',
-      2 => 'field_alumni_story',
+      1 => 'field_alumni_story',
+      2 => 'field_year',
       3 => 'group_alumni_name',
     ),
     'format_type' => 'fieldset',
@@ -69,34 +69,6 @@ function gsb_feature_book_ct_field_group_info() {
     ),
   );
   $export['group_alumni_story|node|book|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_pull_quote|node|book|form';
-  $field_group->group_name = 'group_pull_quote';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'book';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Pull-quote',
-    'weight' => '16',
-    'children' => array(
-      0 => 'field_body',
-      1 => 'field_quote_author_name_title',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_pull_quote|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -117,7 +89,6 @@ function gsb_feature_book_ct_field_group_info() {
       3 => 'field_industry',
       4 => 'field_region',
       5 => 'field_tag',
-      6 => 'field_centers_research_programs',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
