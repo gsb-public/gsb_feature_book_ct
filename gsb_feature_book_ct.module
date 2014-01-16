@@ -5,3 +5,125 @@
  */
 
 include_once 'gsb_feature_book_ct.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter() for book node edit form.
+ */
+function gsb_feature_book_ct_form_book_node_form_alter(&$form, &$form_state) {
+  dpm($form);
+
+  $language = $form['language']['#value'];
+
+  if (!empty($form['field_authors'][$language])) {
+    foreach (element_children($form['field_authors'][$language]) as $index) {
+      if (is_integer($index)) {
+
+        $form['field_authors'][$language][$index]['field_person_fac_single_ref']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
+              array('value' => 'UseEntityReference'),
+            ),
+          ),
+        );
+
+        $form['field_authors'][$language][$index]['field_first_name']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
+              array('value' => 'Other'),
+            ),
+          ),
+        );
+
+        $form['field_authors'][$language][$index]['field_last_name']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
+              array('value' => 'Other'),
+            ),
+          ),
+        );
+
+        // remove "n/a" as an option for the fac_or_other
+        unset($form['field_authors'][$language][$index]['field_person_fac_or_other'][$language]['#options']['_none']);
+      }
+    }
+  }
+
+  // Prepare a state that will be used to mark required alumni story fields.
+  $required_if_alumni_story_states = array(
+    'optional' => array(
+      ':input[name="field_alumni_story[' . $language . ']"]' => array(
+        array('checked' => FALSE),
+      ),
+    ),
+  );
+
+  // Use States API to conditionally mark fields as required.
+  // Note: this will not actually validate fields, it's only for UI.
+  if (!empty($form['field_first_name'][$language])) {
+    $form['field_first_name'][$language][0]['value']['#required'] = FALSE;
+    $form['field_first_name'][$language][0]['value']['#states'] = $required_if_alumni_story_states;
+  }
+
+  if (!empty($form['field_first_name'][$language])) {
+    $form['field_last_name'][$language][0]['value']['#required'] = FALSE;
+    $form['field_last_name'][$language][0]['value']['#states'] = $required_if_alumni_story_states;
+  }
+
+  /**
+   * Set states for field_academic_degrees field collection.
+   * There is a bug with states and Ajax requests that's messing required fields display.
+   * @see https://drupal.org/node/1091852
+   */
+  if (!empty($form['field_academic_degrees'][$language])) {
+    foreach (element_children($form['field_academic_degrees'][$language]) as $index) {
+      if (is_integer($index)) {
+        // Set fields as non-required, those will be validated later.
+        $form['field_academic_degrees'][$language][$index]['field_degree_type'][$language]['#required'] = FALSE;
+        $form['field_academic_degrees'][$language][$index]['field_university'][$language][0]['value']['#required'] = FALSE;
+        $form['field_academic_degrees'][$language][$index]['field_degree_type']['#states'] = $required_if_alumni_story_states;
+        $form['field_academic_degrees'][$language][$index]['field_university']['#states'] = $required_if_alumni_story_states;
+      }
+    }
+  }
+
+  // Perform dditional validation.
+  $form['#validate'][] = 'gsb_feature_book_ct_book_node_form_validate';
+}
+
+/**
+ * Validate callback for book_node_form.
+ *  - Conditionally validate alumni story fields.
+ */
+function gsb_feature_book_ct_book_node_form_validate($form, &$form_state) {
+  $language = $form['language']['#value'];
+  $values = $form_state['values'];
+
+  // If Book is an alumni story we need to manually validate some required fields.
+  if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
+
+    // Validate first and last name.
+    if (empty($values['field_first_name'][$language][0]['value'])) {
+      $field_label = $form['field_first_name'][$language][0]['#title'];
+      form_set_error('field_first_name][und][0][value', $field_label . ' field is required.');
+    }
+    if (empty($values['field_last_name'][$language][0]['value'])) {
+      $field_label = $form['field_last_name'][$language][0]['#title'];
+      form_set_error('field_last_name][und][0][value', $field_label . ' field is required.');
+    }
+
+    // Go throw academic degrees and validate it's fields.
+    foreach ($values['field_academic_degrees'][$language] as $delta => $data) {
+      if (!is_integer($delta)) {
+        continue;
+      }
+      if (empty($data['field_degree_type'][$language][0]['value'])) {
+        $field_label = $form['field_academic_degrees'][$language][0]['field_degree_type'][$language]['#title'];
+        form_set_error('field_academic_degrees][und][' . $delta . '][field_degree_type][und', $field_label . ' field is required.');
+      }
+      if (empty($data['field_university'][$language][0]['value'])) {
+        $field_label = $form['field_academic_degrees'][$language][0]['field_university'][$language]['#title'];
+        form_set_error('field_academic_degrees][und][' . $delta . '][field_university][und', $field_label . ' field is required.');
+      }
+    }
+  }
+}
