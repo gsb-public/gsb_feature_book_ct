@@ -77,7 +77,14 @@ function gsb_feature_book_ct_strongarm() {
           'weight' => '16',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'gsb_feature_book_ct_faculty_authors' => array(
+          'default' => array(
+            'weight' => '14',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__book'] = $strongarm;
