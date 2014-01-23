@@ -55,7 +55,30 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->bundle = 'book';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Book meta wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_authors',
+      1 => 'field_image_single_public',
+      2 => 'title',
+      3 => 'group_wrapper_publisher',
+      4 => 'group_wrapper_taxonomy',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Book meta wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
   $export['group_wrapper_meta|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
@@ -67,7 +90,28 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->bundle = 'book';
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_wrapper_meta';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Publisher wrapper',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_place_of_publication',
+      1 => 'field_publisher',
+      2 => 'field_year_of_publication',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'label' => 'Publisher wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
   $export['group_wrapper_publisher|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
@@ -79,7 +123,26 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->bundle = 'book';
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_wrapper_meta';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Taxonomy wrapper',
+    'weight' => '14',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+      1 => 'field_business_insight_topic',
+      2 => 'field_company_organization',
+      3 => 'field_industry',
+      4 => 'field_region',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'label' => 'Taxonomy wrapper',
+      'instance_settings' => array(
+        'item_count' => '0',
+        'classes' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
   $export['group_wrapper_taxonomy|node|book|default'] = $field_group;
 
   return $export;
