@@ -146,18 +146,15 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'field_collection',
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
-          'add' => 'Add',
           'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
+          'separator' => ', ',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
-        'weight' => 1,
+        'type' => 'gsb_field_formatter_field_collection_separator',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -436,11 +433,13 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 9,
       ),
       'teaser' => array(
@@ -530,7 +529,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'link_label',
         'weight' => 14,
       ),
       'teaser' => array(
@@ -589,7 +588,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
@@ -865,11 +864,13 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 7,
       ),
       'teaser' => array(
@@ -954,17 +955,13 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
           'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
+        'type' => 'field_collection_fields',
         'weight' => 13,
       ),
       'teaser' => array(
