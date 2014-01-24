@@ -78,6 +78,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => ' ',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -91,6 +92,12 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -312,7 +319,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'ds_content' => 'span',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
