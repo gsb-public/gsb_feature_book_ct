@@ -37,7 +37,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_academic_area_unlimited',
     'label' => 'Academic Area',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -48,55 +48,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 14,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-book-field_academic_degrees'
-  $field_instances['node-book-field_academic_degrees'] = array(
-    'bundle' => 'book',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_academic_degrees',
-    'label' => 'Alumni Degree/Program',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 13,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -181,6 +133,54 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_authors',
     'label' => 'Authors',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 2,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-book-field_book_url_pdf_unlimited'
+  $field_instances['node-book-field_book_url_pdf_unlimited'] = array(
+    'bundle' => 'book',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'conditions' => array(),
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_book_url_pdf_unlimited',
+    'label' => 'URL and/or PDF',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -192,7 +192,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 5,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -240,6 +240,49 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-book-field_centers_research_programs'
+  $field_instances['node-book-field_centers_research_programs'] = array(
+    'bundle' => 'book',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_centers_research_programs',
+    'label' => 'Center',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 24,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-book-field_company_organization'
   $field_instances['node-book-field_company_organization'] = array(
     'bundle' => 'book',
@@ -280,7 +323,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 15,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -332,7 +375,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -364,7 +407,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_first_name',
     'label' => 'First Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'linkit' => array(
         'enable' => 0,
@@ -436,7 +479,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 9,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -479,7 +522,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -511,7 +554,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_last_name',
     'label' => 'Last Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'linkit' => array(
         'enable' => 0,
@@ -593,7 +636,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -657,71 +700,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 11,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-book-field_links_attachments'
-  $field_instances['node-book-field_links_attachments'] = array(
-    'bundle' => 'book',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
-        'weight' => 21,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_links_attachments',
-    'label' => 'Attachments',
-    'required' => 0,
-    'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'optional',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'link_field',
-      'weight' => 14,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -821,7 +800,50 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 4,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-book-field_program_single'
+  $field_instances['node-book-field_program_single'] = array(
+    'bundle' => 'book',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_program_single',
+    'label' => 'Alumni Degree/Program',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -871,7 +893,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -914,7 +936,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 17,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1012,7 +1034,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 13,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -1057,7 +1079,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 20,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1177,7 +1199,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 6,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -1188,13 +1210,13 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
-  t('Attachments');
   t('Authors');
   t('BI Region');
   t('BI Topic');
   t('Body');
   t('Book jacket');
   t('CTRL + click to select multiple academic areas.');
+  t('Center');
   t('Company Organization');
   t('First Name');
   t('Industry');
@@ -1206,6 +1228,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Salutation');
   t('Selected reviews');
   t('Tags (Other)');
+  t('URL and/or PDF');
   t('Where to buy');
   t('Year of Publication');
 

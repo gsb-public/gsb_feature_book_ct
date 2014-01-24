@@ -51,11 +51,11 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni story',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
-      0 => 'field_academic_degrees',
-      1 => 'field_alumni_story',
-      2 => 'field_year',
+      0 => 'field_alumni_story',
+      1 => 'field_year',
+      2 => 'field_program_single',
       3 => 'group_alumni_name',
     ),
     'format_type' => 'fieldset',
@@ -81,7 +81,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '15',
+    'weight' => '7',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
@@ -89,15 +89,17 @@ function gsb_feature_book_ct_field_group_info() {
       3 => 'field_industry',
       4 => 'field_region',
       5 => 'field_tag',
+      6 => 'field_centers_research_programs',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Taxonomy',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_taxonomy|node|book|form'] = $field_group;
