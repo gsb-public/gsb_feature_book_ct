@@ -68,7 +68,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -156,18 +156,14 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
           'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
-        'weight' => 28,
+        'type' => 'field_collection_fields',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -179,7 +175,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_book_url_pdf_unlimited',
-    'label' => 'URL and/or PDF',
+    'label' => 'Attachments',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -191,7 +187,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 10,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -248,11 +244,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 14,
       ),
       'teaser' => array(
@@ -341,7 +334,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -374,7 +367,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -390,7 +383,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -541,7 +534,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -591,7 +584,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 15,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -636,7 +629,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -655,7 +648,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 16,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -700,7 +693,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 12,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -716,7 +709,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -811,12 +804,9 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 27,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -951,7 +941,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1002,7 +992,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 13,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1026,7 +1016,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1042,7 +1032,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1083,7 +1073,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1190,6 +1180,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
+  t('Attachments');
   t('Authors');
   t('BI Region');
   t('BI Topic');
@@ -1208,7 +1199,6 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Salutation');
   t('Selected reviews');
   t('Tags (Other)');
-  t('URL and/or PDF');
   t('Where to buy');
   t('Year of Publication');
 

@@ -62,7 +62,7 @@ function gsb_feature_book_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '16',
         ),
         'title' => array(
           'weight' => '0',
@@ -74,13 +74,13 @@ function gsb_feature_book_ct_strongarm() {
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
       ),
       'display' => array(
         'gsb_feature_book_ct_faculty_authors' => array(
           'default' => array(
-            'weight' => '14',
+            'weight' => '4',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -130,6 +130,20 @@ function gsb_feature_book_ct_strongarm() {
   $strongarm->name = 'node_submitted_book';
   $strongarm->value = 0;
   $export['node_submitted_book'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_book_pattern';
+  $strongarm->value = 'faculty-research/books/[node:title]';
+  $export['pathauto_node_book_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_access_node_type_book';
+  $strongarm->value = 0;
+  $export['workbench_access_node_type_book'] = $strongarm;
 
   return $export;
 }

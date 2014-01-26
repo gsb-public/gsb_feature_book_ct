@@ -51,7 +51,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni story',
-    'weight' => '13',
+    'weight' => '12',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_year',
@@ -81,7 +81,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '7',
+    'weight' => '13',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
