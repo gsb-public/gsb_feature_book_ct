@@ -68,7 +68,7 @@ function gsb_feature_book_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'workbench_access' => array(
           'weight' => '1',
