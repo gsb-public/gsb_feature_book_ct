@@ -186,9 +186,6 @@ function gsb_feature_book_ct_field_group_info() {
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
-      2 => 'field_company_organization',
-      3 => 'field_industry',
-      4 => 'field_region',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(

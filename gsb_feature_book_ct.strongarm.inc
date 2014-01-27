@@ -58,6 +58,9 @@ function gsb_feature_book_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
