@@ -199,5 +199,33 @@ function gsb_feature_book_ct_field_group_info() {
   );
   $export['group_wrapper_taxonomy|node|book|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_topics|node|book|teaser_listing';
+  $field_group->group_name = 'group_wrapper_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'teaser_listing';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Topics',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+      1 => 'field_business_insight_topic',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_topics|node|book|teaser_listing'] = $field_group;
+
   return $export;
 }

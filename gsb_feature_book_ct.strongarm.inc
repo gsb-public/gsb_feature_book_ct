@@ -59,7 +59,7 @@ function gsb_feature_book_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'teaser_listing' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -88,6 +88,10 @@ function gsb_feature_book_ct_strongarm() {
           ),
           'teaser' => array(
             'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'teaser_listing' => array(
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),
