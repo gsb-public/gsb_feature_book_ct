@@ -58,7 +58,6 @@ features[field_instance][] = node-book-field_industry
 features[field_instance][] = node-book-field_last_name
 features[field_instance][] = node-book-field_link_single
 features[field_instance][] = node-book-field_link_unlimited
-features[field_instance][] = node-book-field_links_attachments
 features[field_instance][] = node-book-field_middle_name
 features[field_instance][] = node-book-field_place_of_publication
 features[field_instance][] = node-book-field_program_single
