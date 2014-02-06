@@ -137,6 +137,13 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
+    'field_academic_area_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
     'field_authors' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -148,6 +155,13 @@ function gsb_feature_book_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_business_insight_topic' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
@@ -410,13 +424,13 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'group_wrapper_meta',
         1 => 'field_description',
-        2 => 'field_publisher',
-        3 => 'field_book_url_pdf_unlimited',
+        2 => 'field_book_url_pdf_unlimited',
+        3 => 'field_publisher',
         4 => 'field_place_of_publication',
         5 => 'field_selected_reviews',
         7 => 'field_year_of_publication',
-        8 => 'field_academic_area_unlimited',
-        10 => 'field_business_insight_topic',
+        9 => 'field_academic_area_unlimited',
+        11 => 'field_business_insight_topic',
         12 => 'field_image_single_public',
         13 => 'title',
         14 => 'field_authors',
@@ -424,24 +438,24 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
         16 => 'group_wrapper_taxonomy',
       ),
       'right' => array(
-        6 => 'gsb_feature_book_ct_faculty_authors',
-        9 => 'field_link_single',
-        11 => 'field_link_unlimited',
+        6 => 'gsb_feature_base_fields_faculty_authors',
+        8 => 'field_link_single',
+        10 => 'field_link_unlimited',
       ),
     ),
     'fields' => array(
       'group_wrapper_meta' => 'left',
       'field_description' => 'left',
-      'field_publisher' => 'left',
       'field_book_url_pdf_unlimited' => 'left',
+      'field_publisher' => 'left',
       'field_place_of_publication' => 'left',
       'field_selected_reviews' => 'left',
-      'gsb_feature_book_ct_faculty_authors' => 'right',
+      'gsb_feature_base_fields_faculty_authors' => 'right',
       'field_year_of_publication' => 'left',
-      'field_academic_area_unlimited' => 'left',
       'field_link_single' => 'right',
-      'field_business_insight_topic' => 'left',
+      'field_academic_area_unlimited' => 'left',
       'field_link_unlimited' => 'right',
+      'field_business_insight_topic' => 'left',
       'field_image_single_public' => 'left',
       'title' => 'left',
       'field_authors' => 'left',
