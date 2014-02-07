@@ -119,8 +119,8 @@ function gsb_feature_book_ct_field_group_info() {
       0 => 'field_authors',
       1 => 'field_image_single_public',
       2 => 'title',
-      3 => 'group_wrapper_publisher',
-      4 => 'group_wrapper_taxonomy',
+      3 => 'group_wrapper_topics',
+      4 => 'group_wrapper_publisher',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -174,14 +174,14 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_wrapper_taxonomy|node|book|default';
-  $field_group->group_name = 'group_wrapper_taxonomy';
+  $field_group->identifier = 'group_wrapper_topics|node|book|default';
+  $field_group->group_name = 'group_wrapper_topics';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'book';
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_wrapper_meta';
   $field_group->data = array(
-    'label' => 'Taxonomy wrapper',
+    'label' => 'Topics',
     'weight' => '14',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -189,15 +189,19 @@ function gsb_feature_book_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'label' => 'Taxonomy wrapper',
+      'label' => 'Topics',
       'instance_settings' => array(
-        'item_count' => '0',
         'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_taxonomy|node|book|default'] = $field_group;
+  $export['group_wrapper_topics|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
