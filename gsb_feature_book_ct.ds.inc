@@ -297,6 +297,13 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
+    'field_academic_area_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
     'field_authors' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -307,6 +314,13 @@ function gsb_feature_book_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_business_insight_topic' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
@@ -424,8 +438,8 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'group_wrapper_meta',
         1 => 'field_description',
-        2 => 'field_book_url_pdf_unlimited',
-        3 => 'field_publisher',
+        2 => 'field_publisher',
+        3 => 'field_book_url_pdf_unlimited',
         4 => 'field_place_of_publication',
         5 => 'field_selected_reviews',
         7 => 'field_year_of_publication',
@@ -435,7 +449,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
         13 => 'title',
         14 => 'field_authors',
         15 => 'group_wrapper_publisher',
-        16 => 'group_wrapper_taxonomy',
+        16 => 'group_wrapper_topics',
       ),
       'right' => array(
         6 => 'gsb_feature_base_fields_faculty_authors',
@@ -446,8 +460,8 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     'fields' => array(
       'group_wrapper_meta' => 'left',
       'field_description' => 'left',
-      'field_book_url_pdf_unlimited' => 'left',
       'field_publisher' => 'left',
+      'field_book_url_pdf_unlimited' => 'left',
       'field_place_of_publication' => 'left',
       'field_selected_reviews' => 'left',
       'gsb_feature_base_fields_faculty_authors' => 'right',
@@ -460,7 +474,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'title' => 'left',
       'field_authors' => 'left',
       'group_wrapper_publisher' => 'left',
-      'group_wrapper_taxonomy' => 'left',
+      'group_wrapper_topics' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
