@@ -158,3 +158,22 @@ function gsb_feature_book_ct_gsb_feature_base_fields_faculty_author_types() {
     'book',
   );
 }
+
+/**
+ * Implements hook_field_collection_is_empty_alter().
+ */
+function gsb_feature_book_ct_field_collection_is_empty_alter(&$is_empty, $entity) {
+  if (!$is_empty && $entity->field_name == 'field_book_url_pdf_unlimited') {
+    // Mark the field as empty.
+    $is_empty = TRUE;
+    $wrapper = entity_metadata_wrapper('field_collection_item', $entity);
+    // Iterate through the fields we care about.
+    foreach (array('field_file_single_public', 'field_link_single', 'field_title') as $field_name) {
+      // If any of these fields have a value, the field collection is not empty.
+      if ($value = $wrapper->$field_name->value()) {
+        $is_empty = FALSE;
+        continue;
+      }
+    }
+  }
+}
