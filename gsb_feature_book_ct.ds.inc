@@ -324,7 +324,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_description' => array(
+    'field_year_of_publication' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -337,7 +337,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_year_of_publication' => array(
+    'field_body' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -437,14 +437,14 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'group_wrapper_meta',
-        1 => 'field_description',
-        2 => 'field_publisher',
-        3 => 'field_book_url_pdf_unlimited',
+        1 => 'field_body',
+        2 => 'field_book_url_pdf_unlimited',
+        3 => 'field_publisher',
         4 => 'field_place_of_publication',
         5 => 'field_selected_reviews',
         7 => 'field_year_of_publication',
         9 => 'field_academic_area_unlimited',
-        11 => 'field_business_insight_topic',
+        10 => 'field_business_insight_topic',
         12 => 'field_image_single_public',
         13 => 'title',
         14 => 'field_authors',
@@ -454,22 +454,22 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'right' => array(
         6 => 'gsb_feature_base_fields_faculty_authors',
         8 => 'field_link_single',
-        10 => 'field_link_unlimited',
+        11 => 'field_link_unlimited',
       ),
     ),
     'fields' => array(
       'group_wrapper_meta' => 'left',
-      'field_description' => 'left',
-      'field_publisher' => 'left',
+      'field_body' => 'left',
       'field_book_url_pdf_unlimited' => 'left',
+      'field_publisher' => 'left',
       'field_place_of_publication' => 'left',
       'field_selected_reviews' => 'left',
       'gsb_feature_base_fields_faculty_authors' => 'right',
       'field_year_of_publication' => 'left',
       'field_link_single' => 'right',
       'field_academic_area_unlimited' => 'left',
-      'field_link_unlimited' => 'right',
       'field_business_insight_topic' => 'left',
+      'field_link_unlimited' => 'right',
       'field_image_single_public' => 'left',
       'title' => 'left',
       'field_authors' => 'left',
@@ -535,7 +535,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
         1 => 'title',
         2 => 'field_authors',
         3 => 'field_year_of_publication',
-        4 => 'field_description',
+        4 => 'field_body',
         5 => 'group_wrapper_topics',
         6 => 'field_academic_area_unlimited',
         7 => 'field_business_insight_topic',
@@ -546,7 +546,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
       'field_year_of_publication' => 'ds_content',
-      'field_description' => 'ds_content',
+      'field_body' => 'ds_content',
       'group_wrapper_topics' => 'ds_content',
       'field_academic_area_unlimited' => 'ds_content',
       'field_business_insight_topic' => 'ds_content',

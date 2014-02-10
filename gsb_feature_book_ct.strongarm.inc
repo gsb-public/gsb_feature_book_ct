@@ -103,6 +103,10 @@ function gsb_feature_book_ct_strongarm() {
             'weight' => '4',
             'visible' => TRUE,
           ),
+          'teaser_listing' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
