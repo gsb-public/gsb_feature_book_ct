@@ -527,11 +527,13 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'book';
   $ds_layout->view_mode = 'teaser_listing';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'right' => array(
         0 => 'field_image_single_public',
+      ),
+      'left' => array(
         1 => 'title',
         2 => 'field_authors',
         3 => 'field_year_of_publication',
@@ -542,18 +544,19 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'title' => 'ds_content',
-      'field_authors' => 'ds_content',
-      'field_year_of_publication' => 'ds_content',
-      'field_description' => 'ds_content',
-      'group_wrapper_topics' => 'ds_content',
-      'field_academic_area_unlimited' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
+      'field_image_single_public' => 'right',
+      'title' => 'left',
+      'field_authors' => 'left',
+      'field_year_of_publication' => 'left',
+      'field_description' => 'left',
+      'group_wrapper_topics' => 'left',
+      'field_academic_area_unlimited' => 'left',
+      'field_business_insight_topic' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
