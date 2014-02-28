@@ -10,69 +10,8 @@ include_once 'gsb_feature_book_ct.features.inc';
  * Implements hook_form_FORM_ID_alter() for book node edit form.
  */
 function gsb_feature_book_ct_form_book_node_form_alter(&$form, &$form_state) {
+  
   $language = $form['language']['#value'];
-
-  if (!empty($form['field_authors'][$language])) {
-    foreach (element_children($form['field_authors'][$language]) as $index) {
-      if (is_integer($index)) {
-
-        $form['field_authors'][$language][$index]['field_person_fac_single_ref']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'UseEntityReference'),
-            ),
-          ),
-        );
-
-        $form['field_authors'][$language][$index]['field_first_name']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'Other'),
-            ),
-          ),
-        );
-
-        $form['field_authors'][$language][$index]['field_last_name']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'Other'),
-            ),
-          ),
-        );
-
-        // remove "n/a" as an option for the fac_or_other
-        unset($form['field_authors'][$language][$index]['field_person_fac_or_other'][$language]['#options']['_none']);
-      }
-    }
-  }
-
-  $fc_field_name = 'field_book_url_pdf_unlimited';
-  if (!empty($form[$fc_field_name][$language])) {
-    foreach (element_children($form[$fc_field_name][$language]) as $index) {
-      if (is_integer($index)) {
-
-        $form[$fc_field_name][$language][$index]['field_link_single']['#states'] = array(
-          'visible' => array(
-            ':input[name="' . $fc_field_name . '[' . $language . '][' . $index . '][field_book_url_or_pdf][' . $language . ']"]' => array(
-              array('value' => 'Link'),
-            ),
-          ),
-        );
-
-        $form[$fc_field_name][$language][$index]['field_file_single_public']['#states'] = array(
-          'visible' => array(
-            ':input[name="' . $fc_field_name . '[' . $language . '][' . $index . '][field_book_url_or_pdf][' . $language . ']"]' => array(
-              array('value' => 'PDF'),
-            ),
-          ),
-        );
-
-        // remove "n/a" as an option for the field_book_url_or_pdf
-        unset($form[$fc_field_name][$language][$index]['field_book_url_or_pdf'][$language]['#options']['_none']);
-      }
-    }
-  }
-
 
   // Add required field markers. The actual field validation is done in validate callback.
   if (!empty($form['field_first_name'][$language])) {
