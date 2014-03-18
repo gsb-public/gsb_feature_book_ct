@@ -127,7 +127,9 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.',
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+To list authors in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>
+To remove an author, click "Remove" below the the author\'s name.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -219,7 +221,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_body',
-    'label' => 'Description',
+    'label' => 'Body',
     'required' => 1,
     'settings' => array(
       'linkit' => array(
@@ -252,7 +254,9 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'deleted' => 0,
     'description' => 'To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
 <strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
-<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents',
+<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
+To list excerpts in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>
+To remove an excerpt, click "Remove."',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -280,7 +284,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_book_url_pdf_unlimited',
-    'label' => 'Excerpts',
+    'label' => 'Attachments',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -706,7 +710,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_single',
-    'label' => 'Stanford Library Listing',
+    'label' => 'Link to Stanford library listing',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1210,7 +1214,9 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
-Enter a quote from the book review. Do not include the quotation marks; they are added automatically.',
+Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
+To list reviews in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>
+To remove a review, click "Remove."',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1438,18 +1444,21 @@ Enter a quote from the book review. Do not include the quotation marks; they are
   // Translatables
   // Included for use with string extractors like potx.
   t('<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
-Enter a quote from the book review. Do not include the quotation marks; they are added automatically.');
+Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
+To list reviews in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>
+To remove a review, click "Remove."');
   t('Academic Area');
   t('Additional Topic');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
+  t('Attachments');
   t('Authors');
+  t('Body');
   t('Book Jacket');
   t('CTRL + click to select multiple academic areas.');
   t('Centers and Initiatives');
   t('Company or Organization');
-  t('Description');
   t('Enter a description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed any related video <strong>after</strong> at least 255 characters of text.');
   t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | e.g. http://searchworks.stanford.edu/view/10016691');
   t('Enter the city (not the state or country).');
@@ -1460,11 +1469,11 @@ Enter a quote from the book review. Do not include the quotation marks; they are
 - Barnes & Noble<br> 
 - Google Books<br>
 ');
-  t('Excerpts');
   t('First Name');
   t('Industry');
   t('Keywords');
   t('Last Name');
+  t('Link to Stanford library listing');
   t('Middle Name');
   t('Place of Publication');
   t('Publisher');
@@ -1474,12 +1483,15 @@ Enter a quote from the book review. Do not include the quotation marks; they are
   t('Selected Reviews');
   t('Size: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px wide</a> | Click "Choose File," locate the file on your computer, click "Open," then click "Upload." 
 ');
-  t('Stanford Library Listing');
   t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.');
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+To list authors in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>
+To remove an author, click "Remove" below the the author\'s name.');
   t('To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
 <strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
-<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents');
+<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
+To list excerpts in a specific order, click the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>
+To remove an excerpt, click "Remove."');
   t('Where to buy');
   t('Year of Publication');
   t('e.g. Broadway Books');
