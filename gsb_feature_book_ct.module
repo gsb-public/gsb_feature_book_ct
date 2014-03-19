@@ -90,15 +90,6 @@ function gsb_feature_book_ct_book_node_form_validate($form, &$form_state) {
 }
 
 /**
- * Implements hook_gsb_feature_base_fields_faculty_author_types().
- */
-function gsb_feature_book_ct_gsb_feature_base_fields_faculty_author_types() {
-  return array(
-    'book',
-  );
-}
-
-/**
  * Implements hook_field_collection_is_empty_alter().
  */
 function gsb_feature_book_ct_field_collection_is_empty_alter(&$is_empty, $entity) {
