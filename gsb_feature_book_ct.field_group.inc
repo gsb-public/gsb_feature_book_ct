@@ -80,7 +80,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Taxonomy',
+    'label' => 'Tagging',
     'weight' => '13',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -93,7 +93,7 @@ function gsb_feature_book_ct_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'Taxonomy',
+      'label' => 'Tagging',
       'instance_settings' => array(
         'required_fields' => 1,
         'classes' => '',
