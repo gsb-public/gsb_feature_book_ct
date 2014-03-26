@@ -10,8 +10,6 @@ include_once 'gsb_feature_book_ct.features.inc';
  * Implements hook_form_FORM_ID_alter() for book node edit form.
  */
 function gsb_feature_book_ct_form_book_node_form_alter(&$form, &$form_state) {
-  
-  dpm($form);
 
   $language = $form['language']['#value'];
 
