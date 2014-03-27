@@ -13,9 +13,11 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Exported field_instance: 'node-book-field_academic_area_unlimited'
   $field_instances['node-book-field_academic_area_unlimited'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'CTRL + click to select multiple academic areas.',
+    'description' => 'Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -56,15 +58,17 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Academic Area',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_hs',
       'weight' => 18,
     ),
     'workbench_access_field' => 0,
@@ -106,6 +110,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Alumni Mentioned',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -168,6 +174,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Authors',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -221,6 +229,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Body',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -280,6 +290,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Attachments',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -340,6 +352,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'BI Topic',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -386,6 +400,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Center',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -432,6 +448,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Company Organization',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -488,6 +506,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Publication Date',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -546,6 +566,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -614,6 +636,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_image' => 0,
       'file_directory' => 'book_jackets',
       'file_extensions' => 'png gif jpg jpeg',
@@ -669,6 +693,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Industry',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -715,6 +741,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -778,6 +806,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -848,6 +878,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -908,6 +940,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Middle Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -964,6 +998,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Place of publication',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1017,6 +1053,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Alumni Degree/Program',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1066,6 +1104,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Publisher',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1119,6 +1159,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'BI Region',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1165,6 +1207,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Salutation',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1217,6 +1261,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Search field',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'selected_fields' => array(
         'concat_field_entity_label' => 'concat_field_entity_label',
         'field_academic_area_unlimited' => 'field_academic_area_unlimited',
@@ -1296,6 +1342,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Selected reviews',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1342,6 +1390,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Submit',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1388,6 +1438,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Tags (Other)',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1435,6 +1487,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Alumni Degree Year',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -1510,6 +1564,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Year of Publication',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -1539,6 +1595,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Academic Area');
+  t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
@@ -1548,7 +1605,6 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('BI Topic');
   t('Body');
   t('Book jacket');
-  t('CTRL + click to select multiple academic areas.');
   t('Center');
   t('Company Organization');
   t('First Name');
