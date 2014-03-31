@@ -130,6 +130,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Exported field_instance: 'node-book-field_authors'
   $field_instances['node-book-field_authors'] = array(
     'bundle' => 'book',
+    'custom_add_another' => 'Add Another Author',
+    'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1309,6 +1311,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Exported field_instance: 'node-book-field_selected_reviews'
   $field_instances['node-book-field_selected_reviews'] = array(
     'bundle' => 'book',
+    'custom_add_another' => 'Add Another Review',
+    'custom_remove' => 'Remove Review & Reviewer',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
