@@ -135,8 +135,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-To list authors in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>',
+Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -197,9 +197,11 @@ To list authors in a specific order, grab the handle icon <img src="/sites/gsb/f
   // Exported field_instance: 'node-book-field_body'
   $field_instances['node-book-field_body'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed any related video <strong>after</strong> at least 255 characters of text.',
+    'description' => 'Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -261,12 +263,14 @@ To list authors in a specific order, grab the handle icon <img src="/sites/gsb/f
   // Exported field_instance: 'node-book-field_book_url_pdf_unlimited'
   $field_instances['node-book-field_book_url_pdf_unlimited'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
 <strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
 <strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
-To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>',
+Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and dragging it to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -642,7 +646,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
-    'label' => 'Book Jacket',
+    'label' => 'Book Cover Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -809,6 +813,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
     'label' => 'Stanford Library Listing',
     'required' => 0,
     'settings' => array(
+      0 => 'title_label_use_field_label',
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -849,9 +854,11 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
   // Exported field_instance: 'node-book-field_link_unlimited'
   $field_instances['node-book-field_link_unlimited'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the source name and URL to the location where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
+    'description' => 'Enter the name and URL for the website where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
 - Amazon<br> 
 - My Website<br>
 - Publisher<br>
@@ -887,6 +894,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
     'label' => 'Where to buy',
     'required' => 0,
     'settings' => array(
+      0 => 'title_label_use_field_label',
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -906,6 +914,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
       ),
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1146,9 +1155,11 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
   // Exported field_instance: 'node-book-field_region'
   $field_instances['node-book-field_region'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Region',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1172,7 +1183,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_region',
-    'label' => 'BI Region',
+    'label' => 'Region',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1331,7 +1342,7 @@ To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/
     'deleted' => 0,
     'description' => '<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
 Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
-To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>',
+Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and dragging it to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1617,7 +1628,7 @@ To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/f
   t('<strong>Example</strong>: Broadway Books');
   t('<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
 Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
-To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>');
+Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and dragging it to the desired position.<br><br>');
   t('Academic Area');
   t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
   t('Additional Topic');
@@ -1625,20 +1636,14 @@ To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/f
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Author & Co-Authors');
-  t('BI Region');
   t('Book Cover Image');
-  t('Center');
-  t('Company Organization');
-  t('Authors');
-  t('Book Jacket');
   t('CIRCLE');
-  t('CTRL + click to select multiple academic areas.');
   t('Company or Organization');
   t('Description');
-  t('Enter a description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed any related video <strong>after</strong> at least 255 characters of text.');
+  t('Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ');
   t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691');
   t('Enter the city (not the state or country).');
-  t('Enter the source name and URL to the location where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
+  t('Enter the name and URL for the website where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
 - Amazon<br> 
 - My Website<br>
 - Publisher<br>
@@ -1660,14 +1665,15 @@ To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/f
   t('Salutation');
   t('Search field');
   t('Selected Reviews');
+  t('Stanford Library Listing');
   t('Submit');
   t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-To list authors in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>');
+Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>');
   t('To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
 <strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
 <strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
-To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>');
+Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and dragging it to the desired position.<br><br>');
   t('Where to buy');
   t('Year of Publication');
 
