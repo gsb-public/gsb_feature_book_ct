@@ -134,7 +134,9 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+To list authors in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -197,7 +199,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter a description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed any related video <strong>after</strong> at least 255 characters of text.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -228,7 +230,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_body',
-    'label' => 'Body',
+    'label' => 'Description',
     'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
@@ -261,7 +263,10 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
+<strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
+<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
+To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -289,7 +294,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_book_url_pdf_unlimited',
-    'label' => 'Attachments',
+    'label' => 'Excerpts',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -351,7 +356,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'BI Topic',
+    'label' => 'Additional Topic',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -399,7 +404,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'Center',
+    'label' => 'CIRCLE',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -447,7 +452,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_company_organization',
-    'label' => 'Company Organization',
+    'label' => 'Company or Organization',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -597,7 +602,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a> | Click "Choose File," select the file, click "Open," then click "Upload."
+',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -636,7 +642,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
-    'label' => 'Book Cover Image',
+    'label' => 'Book Jacket',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -773,7 +779,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -800,7 +806,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_single',
-    'label' => 'Link to Stanford library listing',
+    'label' => 'Stanford Library Listing',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -845,7 +851,13 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the source name and URL to the location where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
+- Amazon<br> 
+- My Website<br>
+- Publisher<br>
+- Barnes & Noble<br> 
+- Google Books<br>
+',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -972,7 +984,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the city (not the state or country).',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -999,7 +1011,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_place_of_publication',
-    'label' => 'Place of publication',
+    'label' => 'Place of Publication',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1078,7 +1090,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<strong>Example</strong>: Broadway Books',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1136,7 +1148,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'bundle' => 'book',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Region',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1317,7 +1329,9 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => 'Remove Review & Reviewer',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
+Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
+To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1345,7 +1359,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_selected_reviews',
-    'label' => 'Selected reviews',
+    'label' => 'Selected Reviews',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1441,7 +1455,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tags (Other)',
+    'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1600,32 +1614,60 @@ function gsb_feature_book_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>Example</strong>: Broadway Books');
+  t('<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
+Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
+To list reviews in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and drag it up or down to the desired position.<br><br>');
   t('Academic Area');
   t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
+  t('Additional Topic');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
-  t('Attachments');
   t('Author & Co-Authors');
   t('BI Region');
-  t('BI Topic');
-  t('Body');
   t('Book Cover Image');
   t('Center');
   t('Company Organization');
+  t('Authors');
+  t('Book Jacket');
+  t('CIRCLE');
+  t('CTRL + click to select multiple academic areas.');
+  t('Company or Organization');
+  t('Description');
+  t('Enter a description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed any related video <strong>after</strong> at least 255 characters of text.');
+  t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691');
+  t('Enter the city (not the state or country).');
+  t('Enter the source name and URL to the location where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
+- Amazon<br> 
+- My Website<br>
+- Publisher<br>
+- Barnes & Noble<br> 
+- Google Books<br>
+');
+  t('Excerpts');
   t('First Name');
   t('Industry');
+  t('Keywords');
   t('Last Name');
-  t('Link to Stanford library listing');
+  t('Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a> | Click "Choose File," select the file, click "Open," then click "Upload."
+');
   t('Middle Name');
-  t('Place of publication');
+  t('Place of Publication');
   t('Publication Date');
   t('Publisher');
+  t('Region');
   t('Salutation');
   t('Search field');
-  t('Selected reviews');
+  t('Selected Reviews');
   t('Submit');
-  t('Tags (Other)');
+  t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
+To list authors in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an author and drag it up or down to the desired position.<br><br>');
+  t('To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
+<strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
+<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
+To list excerpts in a specific order, grab the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and drag it up or down to the desired position.<br><br>');
   t('Where to buy');
   t('Year of Publication');
 

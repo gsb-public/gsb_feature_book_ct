@@ -80,7 +80,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Taxonomy',
+    'label' => 'Tagging',
     'weight' => '14',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -93,12 +93,13 @@ function gsb_feature_book_ct_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Tagging',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_taxonomy|node|book|form'] = $field_group;
