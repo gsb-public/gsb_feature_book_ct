@@ -130,6 +130,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Exported field_instance: 'node-book-field_authors'
   $field_instances['node-book-field_authors'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -171,7 +173,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_authors',
-    'label' => 'Authors',
+    'label' => 'Author & Co-Authors',
     'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
@@ -592,6 +594,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
   // Exported field_instance: 'node-book-field_image_single_public'
   $field_instances['node-book-field_image_single_public'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -632,7 +636,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
-    'label' => 'Book jacket',
+    'label' => 'Book Cover Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -1600,11 +1604,11 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Attachments');
-  t('Authors');
+  t('Author & Co-Authors');
   t('BI Region');
   t('BI Topic');
   t('Body');
-  t('Book jacket');
+  t('Book Cover Image');
   t('Center');
   t('Company Organization');
   t('First Name');
