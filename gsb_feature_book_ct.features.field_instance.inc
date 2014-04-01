@@ -69,7 +69,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 18,
+      'weight' => 28,
     ),
     'workbench_access_field' => 0,
   );
@@ -255,7 +255,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -374,7 +374,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 27,
     ),
     'workbench_access_field' => 0,
   );
@@ -422,7 +422,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 22,
+      'weight' => 34,
     ),
     'workbench_access_field' => 0,
   );
@@ -472,75 +472,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 24,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-book-field_date'
-  $field_instances['node-book-field_date'] = array(
-    'bundle' => 'book',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'conditions' => array(),
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 28,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_date',
-    'label' => 'Publication Date',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'display_all_day' => 0,
-        'increment' => 15,
-        'input_format' => 'M j Y - g:i:sa',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'repeat_collapsed' => 0,
-        'text_parts' => array(),
-        'year_range' => '-30:+1',
-      ),
-      'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 31,
     ),
     'workbench_access_field' => 0,
   );
@@ -595,7 +527,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -670,7 +602,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 7,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -718,7 +650,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 23,
+      'weight' => 30,
     ),
     'workbench_access_field' => 0,
   );
@@ -773,7 +705,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -983,7 +915,64 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 17,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-book-field_month'
+  $field_instances['node-book-field_month'] = array(
+    'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Enter the numeric equivalent for desired month (1-12).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_month',
+    'label' => 'Month',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1089,7 +1078,68 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 14,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-book-field_pub_date_day'
+  $field_instances['node-book-field_pub_date_day'] = array(
+    'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'conditions' => array(),
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pub_date_day',
+    'label' => 'Day',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'number',
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -1197,7 +1247,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 20,
+      'weight' => 29,
     ),
     'workbench_access_field' => 0,
   );
@@ -1252,7 +1302,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -1384,7 +1434,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1482,7 +1532,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 21,
+      'weight' => 32,
     ),
     'workbench_access_field' => 0,
   );
@@ -1541,7 +1591,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -1618,7 +1668,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -1638,6 +1688,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Author & Co-Authors');
   t('Book Cover Image');
   t('Company or Organization');
+  t('Day');
   t('Description');
   t('Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ');
   t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691');
@@ -1649,6 +1700,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
 - Barnes & Noble<br> 
 - Google Books<br>
 ');
+  t('Enter the numeric equivalent for desired month (1-12).');
   t('Excerpts');
   t('First Name');
   t('Industry');
@@ -1657,8 +1709,8 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a> | Click "Choose File," select the file, click "Open," then click "Upload."
 ');
   t('Middle Name');
+  t('Month');
   t('Place of Publication');
-  t('Publication Date');
   t('Publisher');
   t('Region of Interest');
   t('Salutation');
