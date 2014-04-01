@@ -931,7 +931,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
       ),
     ),
     'deleted' => 0,
-    'description' => 'Enter the numeric equivalent for desired month (1-12).',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1599,6 +1599,8 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   // Exported field_instance: 'node-book-field_year_of_publication'
   $field_instances['node-book-field_year_of_publication'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1642,7 +1644,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_year_of_publication',
-    'label' => 'Year of Publication',
+    'label' => 'Year',
     'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
@@ -1700,7 +1702,6 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
 - Barnes & Noble<br> 
 - Google Books<br>
 ');
-  t('Enter the numeric equivalent for desired month (1-12).');
   t('Excerpts');
   t('First Name');
   t('Industry');
@@ -1727,7 +1728,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
 <strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
 Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and dragging it to the desired position.<br><br>');
   t('Where to buy');
-  t('Year of Publication');
+  t('Year');
 
   return $field_instances;
 }
