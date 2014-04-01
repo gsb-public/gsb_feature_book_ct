@@ -360,7 +360,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'Additional Topic',
+    'label' => 'Additional Topics',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -374,7 +374,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 17,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -408,7 +408,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'CIRCLE',
+    'label' => 'Stanford GSB Affiliations or Initiatives',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -422,7 +422,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 23,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -472,7 +472,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 21,
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -718,7 +718,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 20,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1183,7 +1183,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_region',
-    'label' => 'Region',
+    'label' => 'Region of Interest',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1197,7 +1197,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1482,7 +1482,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 22,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -1631,13 +1631,12 @@ Enter a quote from the book review. Do not include the quotation marks; they are
 Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and dragging it to the desired position.<br><br>');
   t('Academic Area');
   t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
-  t('Additional Topic');
+  t('Additional Topics');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Author & Co-Authors');
   t('Book Cover Image');
-  t('CIRCLE');
   t('Company or Organization');
   t('Description');
   t('Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ');
@@ -1661,10 +1660,11 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Place of Publication');
   t('Publication Date');
   t('Publisher');
-  t('Region');
+  t('Region of Interest');
   t('Salutation');
   t('Search field');
   t('Selected Reviews');
+  t('Stanford GSB Affiliations or Initiatives');
   t('Stanford Library Listing');
   t('Submit');
   t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
