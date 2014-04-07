@@ -149,8 +149,8 @@ function gsb_feature_book_ct_field_group_info() {
       0 => 'field_authors',
       1 => 'field_image_single_public',
       2 => 'title',
-      3 => 'group_wrapper_topics',
-      4 => 'group_wrapper_publisher',
+      3 => 'group_wrapper_publisher',
+      4 => 'group_wrapper_topics',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -184,8 +184,10 @@ function gsb_feature_book_ct_field_group_info() {
       0 => 'field_place_of_publication',
       1 => 'field_publisher',
       2 => 'field_year_of_publication',
+      3 => 'field_month',
+      4 => 'field_pub_date_day',
     ),
-    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Publisher wrapper',
       'instance_settings' => array(

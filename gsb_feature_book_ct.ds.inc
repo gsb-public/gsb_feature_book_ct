@@ -252,6 +252,21 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_place_of_publication' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ', ',
+        ),
+      ),
+    ),
+    'field_publisher' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
     'field_selected_reviews' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -265,6 +280,30 @@ function gsb_feature_book_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_year_of_publication' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ', ',
+        ),
+      ),
+    ),
+    'field_month' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ', ',
+        ),
+      ),
+    ),
+    'field_pub_date_day' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ' ',
         ),
       ),
     ),
@@ -314,7 +353,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser_listing';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -365,7 +404,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
-          'ow-el' => 'div',
+          'ow-el' => 'span',
           'ow-cl' => '',
           'ow-def-cl' => TRUE,
           'ow-at' => '',
@@ -373,16 +412,19 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_body' => array(
+    'field_month' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+          'suffix' => ' ',
+        ),
+      ),
+    ),
+    'field_pub_date_day' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ', ',
         ),
       ),
     ),
@@ -504,38 +546,42 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'group_wrapper_meta',
         1 => 'field_body',
-        2 => 'field_book_url_pdf_unlimited',
-        3 => 'field_publisher',
-        4 => 'field_place_of_publication',
-        5 => 'field_selected_reviews',
-        7 => 'field_year_of_publication',
-        9 => 'field_academic_area_unlimited',
-        10 => 'field_business_insight_topic',
-        12 => 'field_image_single_public',
-        13 => 'title',
-        14 => 'field_authors',
-        15 => 'group_wrapper_publisher',
-        16 => 'group_wrapper_topics',
+        2 => 'field_publisher',
+        3 => 'field_book_url_pdf_unlimited',
+        4 => 'field_selected_reviews',
+        5 => 'field_place_of_publication',
+        7 => 'field_month',
+        8 => 'field_academic_area_unlimited',
+        9 => 'field_pub_date_day',
+        11 => 'field_year_of_publication',
+        13 => 'field_business_insight_topic',
+        14 => 'field_image_single_public',
+        15 => 'title',
+        16 => 'field_authors',
+        17 => 'group_wrapper_publisher',
+        18 => 'group_wrapper_topics',
       ),
       'right' => array(
         6 => 'gsb_feature_base_fields_faculty_authors',
-        8 => 'field_link_single',
-        11 => 'field_link_unlimited',
+        10 => 'field_link_single',
+        12 => 'field_link_unlimited',
       ),
     ),
     'fields' => array(
       'group_wrapper_meta' => 'left',
       'field_body' => 'left',
-      'field_book_url_pdf_unlimited' => 'left',
       'field_publisher' => 'left',
-      'field_place_of_publication' => 'left',
+      'field_book_url_pdf_unlimited' => 'left',
       'field_selected_reviews' => 'left',
+      'field_place_of_publication' => 'left',
       'gsb_feature_base_fields_faculty_authors' => 'right',
-      'field_year_of_publication' => 'left',
-      'field_link_single' => 'right',
+      'field_month' => 'left',
       'field_academic_area_unlimited' => 'left',
-      'field_business_insight_topic' => 'left',
+      'field_pub_date_day' => 'left',
+      'field_link_single' => 'right',
+      'field_year_of_publication' => 'left',
       'field_link_unlimited' => 'right',
+      'field_business_insight_topic' => 'left',
       'field_image_single_public' => 'left',
       'title' => 'left',
       'field_authors' => 'left',
@@ -596,26 +642,28 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'right' => array(
-        0 => 'field_image_single_public',
-      ),
       'left' => array(
-        1 => 'title',
-        2 => 'field_authors',
-        3 => 'field_year_of_publication',
-        4 => 'field_body',
+        0 => 'title',
+        1 => 'field_authors',
+        2 => 'field_month',
+        3 => 'field_pub_date_day',
+        4 => 'field_year_of_publication',
         5 => 'group_wrapper_topics',
-        6 => 'field_academic_area_unlimited',
-        7 => 'field_business_insight_topic',
+        7 => 'field_academic_area_unlimited',
+        8 => 'field_business_insight_topic',
+      ),
+      'right' => array(
+        6 => 'field_image_single_public',
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'right',
       'title' => 'left',
       'field_authors' => 'left',
+      'field_month' => 'left',
+      'field_pub_date_day' => 'left',
       'field_year_of_publication' => 'left',
-      'field_description' => 'left',
       'group_wrapper_topics' => 'left',
+      'field_image_single_public' => 'right',
       'field_academic_area_unlimited' => 'left',
       'field_business_insight_topic' => 'left',
     ),
