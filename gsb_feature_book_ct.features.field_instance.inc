@@ -370,7 +370,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 27,
+      'weight' => 29,
     ),
     'workbench_access_field' => 0,
   );
@@ -413,12 +413,12 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
-      'type' => 'options_select',
-      'weight' => 34,
+      'type' => 'taxonomy_hs',
+      'weight' => 32,
     ),
     'workbench_access_field' => 0,
   );
@@ -468,7 +468,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 31,
+      'weight' => 34,
     ),
     'workbench_access_field' => 0,
   );
@@ -646,7 +646,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 30,
+      'weight' => 33,
     ),
     'workbench_access_field' => 0,
   );
@@ -1253,7 +1253,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 29,
+      'weight' => 30,
     ),
     'workbench_access_field' => 0,
   );
@@ -1537,7 +1537,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 32,
+      'weight' => 31,
     ),
     'workbench_access_field' => 0,
   );
