@@ -1675,7 +1675,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 7,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
