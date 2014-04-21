@@ -761,6 +761,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -774,7 +775,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -856,7 +857,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 12,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -1384,7 +1385,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 18,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -1440,7 +1441,7 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 8,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
