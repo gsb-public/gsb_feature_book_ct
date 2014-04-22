@@ -761,6 +761,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -921,11 +922,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'bundle' => 'book',
     'custom_add_another' => '',
     'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
