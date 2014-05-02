@@ -134,9 +134,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -201,7 +199,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ',
+    'description' => 'Embed related video <strong>after</strong> at least 255 characters of text. ',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -263,10 +261,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
-<strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
-<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
-Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and dragging it to the desired position.<br><br>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -534,7 +529,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a> | Click "Choose File," select the file, click "Open," then click "Upload."
+    'description' => 'Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a>
 ',
     'display' => array(
       'default' => array(
@@ -709,9 +704,11 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
   // Exported field_instance: 'node-book-field_link_single'
   $field_instances['node-book-field_link_single'] = array(
     'bundle' => 'book',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691',
+    'description' => 'Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -787,13 +784,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the name and URL for the website where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
-- Amazon<br> 
-- My Website<br>
-- Publisher<br>
-- Barnes & Noble<br> 
-- Google Books<br>
-',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1393,9 +1384,7 @@ Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/5
     'custom_remove' => 'Remove Review & Reviewer',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
-Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
-Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and dragging it to the desired position.<br><br>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1680,9 +1669,6 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   // Translatables
   // Included for use with string extractors like potx.
   t('<strong>Example</strong>: Broadway Books');
-  t('<strong>Reviewer Format</strong>: FULL NAME, TITLE, ORGANIZATION | e.g. Christopher F. Chabris, The Wall Street Journal<br><br>
-Enter a quote from the book review. Do not include the quotation marks; they are added automatically.<br><br>
-Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to a review and dragging it to the desired position.<br><br>');
   t('Academic Area');
   t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
   t('Additional Topics');
@@ -1694,22 +1680,15 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Company or Organization');
   t('Day');
   t('Description');
-  t('Enter a concise description of the book. Click the "Paste as plain text" icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-paste-as-text.png?itok=m54HqK7-" width="30" height="35" /> <strong>first</strong> to use content copied from an application or website. Embed related video <strong>after</strong> at least 255 characters of text. ');
-  t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database. | <strong>Example</strong>: http://searchworks.stanford.edu/view/10016691');
+  t('Embed related video <strong>after</strong> at least 255 characters of text. ');
+  t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database.');
   t('Enter the city (not the state or country).');
-  t('Enter the name and URL for the website where users can purchase the book. For consistency, use the following as the text for commonly used sources: <br><br>
-- Amazon<br> 
-- My Website<br>
-- Publisher<br>
-- Barnes & Noble<br> 
-- Google Books<br>
-');
   t('Excerpts');
   t('First Name');
   t('Industry');
   t('Keywords');
   t('Last Name');
-  t('Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a> | Click "Choose File," select the file, click "Open," then click "Upload."
+  t('Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a>
 ');
   t('Middle Name');
   t('Month');
@@ -1722,13 +1701,6 @@ Reorder reviews by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Stanford GSB Affiliations or Initiatives');
   t('Stanford Library Listing');
   t('Submit');
-  t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>
-Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>');
-  t('To link to an excerpt, enter the link in the "URL" field. To upload a PDF of an excerpt, click "Choose File," locate and select the file, click "Open," then click "Upload." For both options, enter the link text in the "Title" field.<br><br>  
-<strong>Link Title</strong>: View ITEM | e.g. View Chapter 1<br><br>  
-<strong>PDF Title</strong>: Download ITEM | e.g. Download Table of Contents<br><br>
-Reorder excerpts by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" /> next to an excerpt and dragging it to the desired position.<br><br>');
   t('Where to buy');
   t('Year');
 
