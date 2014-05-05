@@ -529,8 +529,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a>
-',
+    'description' => 'Min. width: 150 px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -708,7 +707,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database.',
+    'description' => 'Enter the URL to the book listing on Stanford\'s SearchWorks database.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1681,15 +1680,14 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Day');
   t('Description');
   t('Embed related video <strong>after</strong> at least 255 characters of text. ');
-  t('Enter the URL to the book listing on Stanford\'s <a href="http://searchworks.stanford.edu/" target="_blank">SearchWorks</a> database.');
+  t('Enter the URL to the book listing on Stanford\'s SearchWorks database.');
   t('Enter the city (not the state or country).');
   t('Excerpts');
   t('First Name');
   t('Industry');
   t('Keywords');
   t('Last Name');
-  t('Max. width: <a href="http://stnfd.biz/tO2Sz" target="_blank">150 px</a>
-');
+  t('Min. width: 150 px');
   t('Middle Name');
   t('Month');
   t('Place of Publication');
