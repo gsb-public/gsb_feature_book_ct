@@ -110,3 +110,65 @@ function gsb_feature_book_ct_field_collection_is_empty_alter(&$is_empty, $entity
     }
   }
 }
+
+/**
+ * Implements hook_node_presave().
+ */
+function gsb_feature_book_ct_node_presave($node) {
+
+  // update the book's academic area
+  if (empty($node->nid) && $node->type == 'book' && empty($node->field_academic_area_unlimited['und'])) {
+    _gsb_feature_book_ct_modify_academic_area($node);
+  }
+}  
+
+function _gsb_feature_book_ct_modify_academic_area(&$book_node) {
+
+  // check if academic area is set
+  // if academic area is not set we will try to use the author's academic area
+
+  // get the entity wrapper for the node
+  $ewrap_book = entity_metadata_wrapper('node', $book_node);
+
+  // get the authors info
+  $authors = $ewrap_book->field_authors->value();
+
+  // get the first author and update the book
+
+  $academic_area_tids = array();
+
+  if (!empty($authors)) {
+    foreach ($authors as $author) {
+      if (!empty($author->field_person_fac_single_ref['und']) && !empty($author->field_person_fac_single_ref['und'][0]['target_id'])) {
+
+        // get author's node id
+        $author_nid = $author->field_person_fac_single_ref['und'][0]['target_id'];
+
+        // load the author node
+        $author_node = node_load($author_nid);
+
+        // update the book with this author
+
+        // get entity wrapper for the author node
+        $ewrap_author = entity_metadata_wrapper('node', $author_node);
+
+        // get the term for the author's academic area
+        $academic_area = $ewrap_author->field_academic_area_single->value();
+
+        if ($academic_area != null) {
+          $tid = $academic_area->tid;
+          $academic_area_tids[$tid] = $tid;
+        }
+
+      }
+    }
+
+    foreach($academic_area_tids as $tid) {
+      $book_node->field_academic_area_unlimited['und'][] = array('tid' => $tid);
+    }    
+
+  }
+
+}
+
+
