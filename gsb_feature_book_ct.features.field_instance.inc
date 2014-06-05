@@ -707,7 +707,6 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL to the book listing on Stanford\'s SearchWorks database.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -734,10 +733,9 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_single',
-    'label' => 'Stanford Library Listing',
+    'label' => 'Stanford Library Listing URL',
     'required' => 0,
     'settings' => array(
-      0 => 'title_label_use_field_label',
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
