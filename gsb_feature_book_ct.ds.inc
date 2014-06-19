@@ -291,6 +291,19 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_book_url_pdf_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_month' => array(
       'formatter_settings' => array(
         'ft' => array(
