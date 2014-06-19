@@ -199,7 +199,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Embed related video <strong>after</strong> at least 255 characters of text. ',
+    'description' => 'Embed related video <strong>after</strong> at least 255 characters of text.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -229,6 +229,36 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Description',
     'required' => 1,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 0,
+          'gsb_html_text' => 0,
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'plain_text' => 0,
+          'slideshow' => 0,
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
       'custom_add_another' => '',
       'custom_remove' => '',
       'linkit' => array(
@@ -707,6 +737,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1680,16 +1711,15 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Company or Organization');
   t('Day');
   t('Description');
-  t('Embed related video <strong>after</strong> at least 255 characters of text. ');
-  t('Enter the URL to the book listing on Stanford\'s SearchWorks database.');
+  t('Embed related video <strong>after</strong> at least 255 characters of text.');
   t('Enter the city (not the state or country).');
   t('Excerpts');
   t('First Name');
   t('Industry');
   t('Keywords');
   t('Last Name');
-  t('Min. width: 150 px');
   t('Middle Name');
+  t('Min. width: 150 px');
   t('Month');
   t('Place of Publication');
   t('Publisher');
@@ -1698,7 +1728,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Search field');
   t('Selected Reviews');
   t('Stanford GSB Affiliations or Initiatives');
-  t('Stanford Library Listing');
+  t('Stanford Library Listing URL');
   t('Submit');
   t('Where to buy');
   t('Year');
