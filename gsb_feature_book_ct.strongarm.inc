@@ -64,6 +64,9 @@ function gsb_feature_book_ct_strongarm() {
       'views_content_pane' => array(
         'custom_settings' => FALSE,
       ),
+      'insight_featured_card' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -97,6 +100,10 @@ function gsb_feature_book_ct_strongarm() {
             'weight' => '19',
             'visible' => FALSE,
           ),
+          'insight_featured_card' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
@@ -109,6 +116,10 @@ function gsb_feature_book_ct_strongarm() {
           ),
           'teaser' => array(
             'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'insight_featured_card' => array(
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
