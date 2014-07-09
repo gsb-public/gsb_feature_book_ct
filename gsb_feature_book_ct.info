@@ -69,7 +69,6 @@ features[field_instance][] = node-book-field_program_single
 features[field_instance][] = node-book-field_pub_date_day
 features[field_instance][] = node-book-field_publisher
 features[field_instance][] = node-book-field_region_of_interest
-features[field_instance][] = node-book-field_salutation
 features[field_instance][] = node-book-field_search_field
 features[field_instance][] = node-book-field_selected_reviews
 features[field_instance][] = node-book-field_submit
