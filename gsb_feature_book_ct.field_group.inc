@@ -124,6 +124,7 @@ function gsb_feature_book_ct_field_group_info() {
       4 => 'field_region',
       5 => 'field_tag',
       6 => 'field_centers_research_programs',
+      7 => 'field_region_of_interest',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
