@@ -352,6 +352,9 @@ function gsb_feature_book_ct_ds_field_settings_info() {
     ),
   );
   $export['node|book|idea_story_related'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|book|insight_featured_card';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'book';
@@ -726,6 +729,9 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['node|book|idea_story_related'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|book|insight_featured_card';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'book';
