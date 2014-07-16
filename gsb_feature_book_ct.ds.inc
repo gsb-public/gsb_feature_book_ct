@@ -330,14 +330,8 @@ function gsb_feature_book_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'book';
   $ds_fieldsetting->view_mode = 'idea_story_related';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
+    'field_authors' => array(
       'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
@@ -347,7 +341,6 @@ function gsb_feature_book_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
       ),
     ),
   );
@@ -710,12 +703,10 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-       0 => 'title',
-        1 => 'field_authors',
+        0 => 'field_authors',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'field_authors' => 'ds_content',
     ),
     'classes' => array(),
