@@ -178,8 +178,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'separator' => ', ',
-          'view_mode' => 'full',
+          'separator' => ',',
+          'view_mode' => 'existing_node_teaser',
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 1,
