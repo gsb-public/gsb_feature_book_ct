@@ -1728,6 +1728,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Program');
   t('Publisher');
   t('Region of Interest');
+  t('Salutation');
   t('Search field');
   t('Selected Reviews');
   t('Stanford GSB Affiliations or Initiatives');

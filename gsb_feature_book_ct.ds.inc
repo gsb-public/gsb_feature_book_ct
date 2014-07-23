@@ -325,82 +325,6 @@ function gsb_feature_book_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|book|idea_story_related';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'book';
-  $ds_fieldsetting->view_mode = 'idea_story_related';
-  $ds_fieldsetting->settings = array(
-    'field_authors' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-  );
-  $export['node|book|idea_story_related'] = $ds_fieldsetting;
-  $ds_fieldsetting->id = 'node|book|insight_featured_card';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'book';
-  $ds_fieldsetting->view_mode = 'insight_featured_card';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-        'conditions' => array(),
-      ),
-    ),
-    'field_authors' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_image_single_public' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-  );
-  $export['node|book|insight_featured_card'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|book|insight_featured_card';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'book';
@@ -763,45 +687,14 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
       'field_authors' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
+    'wrappers' => array(),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
+    'layout_attributes_merge' => TRUE,
+    'layout_link_attribute' => FALSE,
     'layout_link_custom' => '',
   );
   $export['node|book|idea_story_related'] = $ds_layout;
-  $ds_layout->id = 'node|book|insight_featured_card';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'book';
-  $ds_layout->view_mode = 'insight_featured_card';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'title',
-        2 => 'field_authors',
-      ),
-    ),
-    'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'title' => 'ds_content',
-      'field_authors' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-  );
-  $export['node|book|insight_featured_card'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
