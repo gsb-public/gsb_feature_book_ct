@@ -1170,62 +1170,6 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_region'
-  $field_instances['node-book-field_region'] = array(
-    'bundle' => 'book',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
-      ),
-      'idea_story_related' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'teaser_listing' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_region',
-    'label' => 'Region of Interest',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'taxonomy_hs',
-      'weight' => 30,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-book-field_region_of_interest'
   $field_instances['node-book-field_region_of_interest'] = array(
     'bundle' => 'book',
@@ -1391,24 +1335,18 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'field_business_insight_topic' => 'field_business_insight_topic',
         'field_centers_research_programs' => 'field_centers_research_programs',
         'field_company_organization' => 'field_company_organization',
-        'field_first_name' => 'field_first_name',
         'field_image_single_public' => 0,
         'field_industry' => 'field_industry',
-        'field_last_name' => 'field_last_name',
         'field_link_single' => 0,
         'field_link_unlimited' => 0,
-        'field_middle_name' => 'field_middle_name',
         'field_month' => 0,
         'field_place_of_publication' => 'field_place_of_publication',
         'field_program_single' => 'field_program_single',
         'field_pub_date_day' => 0,
         'field_publisher' => 'field_publisher',
-        'field_region' => 'field_region',
-        'field_salutation' => 'field_salutation',
         'field_selected_reviews' => 0,
         'field_submit' => 0,
         'field_tag' => 'field_tag',
-        'field_year' => 0,
         'field_year_of_publication' => 'field_year_of_publication',
       ),
       'user_register_form' => FALSE,
