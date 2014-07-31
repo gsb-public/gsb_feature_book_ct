@@ -1283,6 +1283,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'field_program_single' => 'field_program_single',
         'field_pub_date_day' => 0,
         'field_publisher' => 'field_publisher',
+        'field_region_of_interest' => 'field_region_of_interest',
         'field_selected_reviews' => 0,
         'field_submit' => 0,
         'field_tag' => 'field_tag',
