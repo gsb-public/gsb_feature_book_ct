@@ -81,7 +81,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 28,
+      'weight' => 37,
     ),
     'workbench_access_field' => 0,
   );
@@ -479,7 +479,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 29,
+      'weight' => 38,
     ),
     'workbench_access_field' => 0,
   );
@@ -539,7 +539,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 33,
+      'weight' => 41,
     ),
     'workbench_access_field' => 0,
   );
@@ -1214,7 +1214,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 31,
+      'weight' => 39,
     ),
     'workbench_access_field' => 0,
   );
@@ -1487,7 +1487,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 32,
+      'weight' => 41,
     ),
     'workbench_access_field' => 0,
   );

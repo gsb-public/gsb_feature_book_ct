@@ -13,6 +13,85 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_academic_area|node|book|form';
+  $field_group->group_name = 'group_academic_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Academic Area',
+    'weight' => '36',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_academic_area|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_academic_area|node|working_paper|form';
+  $field_group->group_name = 'group_academic_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'working_paper';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Academic Area',
+    'weight' => '19',
+    'children' => array(),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_academic_area|node|working_paper|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_additional_topics|node|book|form';
+  $field_group->group_name = 'group_additional_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Additional Topics',
+    'weight' => '37',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_additional_topics|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_alumni_story|node|book|form';
   $field_group->group_name = 'group_alumni_story';
   $field_group->entity_type = 'node';
@@ -24,9 +103,7 @@ function gsb_feature_book_ct_field_group_info() {
     'weight' => '12',
     'children' => array(
       0 => 'field_alumni_story',
-      1 => 'field_year',
-      2 => 'field_program_single',
-      3 => 'group_alumni_name',
+      1 => 'field_program_single',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -39,6 +116,33 @@ function gsb_feature_book_ct_field_group_info() {
     ),
   );
   $export['group_alumni_story|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_centers|node|book|form';
+  $field_group->group_name = 'group_centers';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Centers',
+    'weight' => '39',
+    'children' => array(
+      0 => 'field_centers_research_programs',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_centers|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -77,6 +181,60 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_regions_of_interest|node|book|form';
+  $field_group->group_name = 'group_regions_of_interest';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Regions of Interest',
+    'weight' => '38',
+    'children' => array(
+      0 => 'field_region_of_interest',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_regions_of_interest|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|book|form';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '40',
+    'children' => array(
+      0 => 'field_tag',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tags|node|book|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_taxonomy|node|book|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';
@@ -87,24 +245,18 @@ function gsb_feature_book_ct_field_group_info() {
     'label' => 'Tagging',
     'weight' => '13',
     'children' => array(
-      0 => 'field_academic_area_unlimited',
-      1 => 'field_business_insight_topic',
-      2 => 'field_company_organization',
-      3 => 'field_industry',
-      4 => 'field_region',
-      5 => 'field_tag',
-      6 => 'field_centers_research_programs',
-      7 => 'field_region_of_interest',
+      0 => 'group_academic_area',
+      1 => 'group_additional_topics',
+      2 => 'group_regions_of_interest',
+      3 => 'group_centers',
+      4 => 'group_tags',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tabs',
     'format_settings' => array(
-      'label' => 'Tagging',
+      'formatter' => '',
       'instance_settings' => array(
-        'required_fields' => 1,
         'classes' => '',
-        'description' => '',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_taxonomy|node|book|form'] = $field_group;
