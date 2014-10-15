@@ -45,7 +45,6 @@ features[ds_layout_settings][] = node|book|teaser_listing
 features[ds_view_modes][] = existing_node_teaser
 features[features_api][] = api:2
 features[field_group][] = group_academic_area|node|book|form
-features[field_group][] = group_academic_area|node|working_paper|form
 features[field_group][] = group_additional_topics|node|book|form
 features[field_group][] = group_alumni_story|node|book|form
 features[field_group][] = group_centers|node|book|form
