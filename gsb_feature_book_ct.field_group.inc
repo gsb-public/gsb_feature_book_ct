@@ -40,31 +40,6 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_academic_area|node|working_paper|form';
-  $field_group->group_name = 'group_academic_area';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'working_paper';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Academic Area',
-    'weight' => '19',
-    'children' => array(),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_academic_area|node|working_paper|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_additional_topics|node|book|form';
   $field_group->group_name = 'group_additional_topics';
   $field_group->entity_type = 'node';
