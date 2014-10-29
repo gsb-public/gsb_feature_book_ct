@@ -479,7 +479,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 38,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -539,7 +539,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 41,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -948,8 +948,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_program_single'
-  $field_instances['node-book-field_program_single'] = array(
+  // Exported field_instance: 'node-book-field_program_unlimited'
+  $field_instances['node-book-field_program_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -959,21 +959,24 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 29,
       ),
       'idea_story_related' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 0,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -985,17 +988,18 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_program_single',
+    'field_name' => 'field_program_unlimited',
     'label' => 'Program',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1005,7 +1009,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -1300,7 +1304,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -1487,7 +1491,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 41,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );

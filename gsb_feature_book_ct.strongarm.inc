@@ -86,7 +86,7 @@ function gsb_feature_book_ct_strongarm() {
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
       ),
       'display' => array(
