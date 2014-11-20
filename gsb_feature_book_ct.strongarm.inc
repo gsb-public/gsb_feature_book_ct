@@ -131,7 +131,7 @@ function gsb_feature_book_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser_listing' => array(
-            'weight' => '15',
+            'weight' => '17',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -147,8 +147,8 @@ function gsb_feature_book_ct_strongarm() {
             'visible' => FALSE,
           ),
           'news_listing' => array(
-            'weight' => '4',
-            'visible' => TRUE,
+            'weight' => '17',
+            'visible' => FALSE,
           ),
         ),
       ),
