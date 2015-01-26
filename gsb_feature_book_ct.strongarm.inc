@@ -62,7 +62,7 @@ function gsb_feature_book_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'views_content_pane' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'idea_story_related' => array(
         'custom_settings' => TRUE,
@@ -134,6 +134,10 @@ function gsb_feature_book_ct_strongarm() {
             'weight' => '4',
             'visible' => TRUE,
           ),
+          'views_content_pane' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
@@ -162,6 +166,10 @@ function gsb_feature_book_ct_strongarm() {
           ),
           'alumni_featured_content' => array(
             'weight' => '6',
+            'visible' => FALSE,
+          ),
+          'views_content_pane' => array(
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
