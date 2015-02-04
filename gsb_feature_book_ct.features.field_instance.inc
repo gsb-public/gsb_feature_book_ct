@@ -347,20 +347,8 @@ function gsb_feature_book_ct_field_default_field_instances() {
       ),
       'news_listing' => array(
         'label' => 'hidden',
-        'module' => 'smart_trim',
-        'settings' => array(
-          'conditions' => array(),
-          'more_link' => 0,
-          'more_text' => 'Read more',
-          'summary_handler' => 'full',
-          'trim_length' => 250,
-          'trim_options' => array(
-            'text' => 0,
-          ),
-          'trim_suffix' => '...',
-          'trim_type' => 'chars',
-        ),
-        'type' => 'smart_trim_format',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'teaser' => array(
