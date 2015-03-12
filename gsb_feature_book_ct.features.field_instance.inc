@@ -866,6 +866,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Stanford Library Listing URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -972,6 +973,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
