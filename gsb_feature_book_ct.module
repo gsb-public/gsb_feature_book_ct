@@ -128,3 +128,12 @@ function _gsb_feature_book_ct_modify_academic_area(&$book_node) {
 }
 
 
+/**
+ * Alter variables for taxonomy-term.tpl.php.
+ */
+function gsb_feature_book_ct_preprocess_taxonomy_term(&$variables) {
+  if ($variables['elements']['#entity_type'] == 'taxonomy_term' &&  $variables['vocabulary_machine_name'] == 'tag') {
+    $term = $variables['term'];
+    $variables['term_name'] = $term->name;
+  }
+}
