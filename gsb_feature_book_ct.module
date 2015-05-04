@@ -37,14 +37,31 @@ function gsb_feature_book_ct_form_book_node_form_alter(&$form, &$form_state) {
 function gsb_feature_book_ct_book_node_form_validate($form, &$form_state) {
   $language = $form['language']['#value'];
   $values = $form_state['values'];
-
   // If Book is an alumni story we need to manually validate some required fields.
   if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
-
     if (empty($values['field_program_unlimited'][$language][0]['tid'])) {
       $field_label = $form['field_program_unlimited'][$language]['#title'];
       form_set_error('field_program_unlimited]['.$language.'][0][tid', $field_label . ' field is required.');
     }
+  }
+  $delta = 0;
+  foreach($form_state['values']['field_selected_reviews'][$language] as $selected_review) {
+    if (is_array($selected_review) && $selected_review['field_book_url_or_pdf'][$language][0]['value'] == 'Link') {
+      $url = $selected_review['field_link_single'][$language][0]['url'];
+      if ($url == '' || !valid_url($url, TRUE)) {
+        form_set_error('field_selected_reviews][' . $language . ']['.$delta.'][field_link_single', 'The value '.$url.' provided for URL is not a valid URL.');
+      }
+    }
+    $delta++;
+  }
+  $delta = 0;
+  foreach($form_state['values']['field_selected_reviews'][$language] as $selected_review) {
+    if (is_array($selected_review) && $selected_review['field_book_url_or_pdf'][$language][0]['value'] == 'PDF') {
+      if ($selected_review['field_file_single_public'][$language][0]['fid'] == 0) {
+        form_set_error('field_selected_reviews]['.$language.']['.$delta.'][field_file_single_public', 'Book review pdf file is invalid.');
+      }
+    }
+    $delta++;
   }
 }
 
