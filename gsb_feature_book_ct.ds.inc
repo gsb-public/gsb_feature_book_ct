@@ -137,6 +137,32 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_file_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['field_collection_item|field_selected_reviews|default'] = $ds_fieldsetting;
 
@@ -792,11 +818,15 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_review',
-        1 => 'field_reviewer',
+        1 => 'field_file_single_public',
+        2 => 'field_link_single',
+        3 => 'field_reviewer',
       ),
     ),
     'fields' => array(
       'field_review' => 'ds_content',
+      'field_file_single_public' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_reviewer' => 'ds_content',
     ),
     'classes' => array(),
