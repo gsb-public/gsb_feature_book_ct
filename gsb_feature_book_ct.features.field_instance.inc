@@ -19,6 +19,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
@@ -44,6 +50,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 17,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -62,6 +74,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'gsb_field_formatter_path_term_separator',
         'weight' => 6,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -99,6 +117,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -117,6 +141,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 31,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -128,6 +158,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 31,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -162,6 +198,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
@@ -195,6 +237,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 2,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
@@ -216,6 +264,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 1,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -249,6 +303,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Embed related video <strong>after</strong> at least 255 characters of text.',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -270,6 +330,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -281,6 +347,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 14,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -353,6 +425,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'field_collection',
@@ -375,6 +453,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 10,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -386,6 +470,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 16,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -417,6 +507,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
@@ -442,6 +538,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 21,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -460,6 +562,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'gsb_field_formatter_path_term_separator',
         'weight' => 7,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -491,6 +599,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -509,6 +623,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 25,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -520,6 +640,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 25,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -552,6 +678,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Min. width: 150 px',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -580,6 +712,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'image',
         'weight' => 0,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -601,6 +739,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 6,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -644,6 +788,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'link',
@@ -665,6 +815,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 16,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -677,6 +833,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 20,
       ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -684,6 +846,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'label' => 'Stanford Library Listing URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -731,6 +894,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -752,6 +921,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 20,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -764,6 +939,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 21,
       ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -772,6 +953,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -819,6 +1001,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'list',
@@ -840,6 +1028,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 14,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -854,6 +1048,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'list_default',
         'weight' => 2,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -885,6 +1085,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Enter the city (not the state or country).',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -906,6 +1112,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 13,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -917,6 +1129,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 19,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -957,6 +1175,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -978,6 +1202,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -985,6 +1215,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'views_content_pane' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1023,6 +1259,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'number',
@@ -1048,6 +1290,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 18,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1066,6 +1314,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'number_integer',
         'weight' => 3,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1101,6 +1355,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '<strong>Example</strong>: Broadway Books',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -1122,6 +1382,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 11,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1133,6 +1399,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 17,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1173,6 +1445,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -1182,11 +1460,23 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 28,
       ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'insight_featured_card' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 22,
+      ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1195,6 +1485,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'views_content_pane' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1231,6 +1527,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1249,6 +1551,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 34,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1260,6 +1568,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 34,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1318,6 +1632,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'field_collection',
@@ -1340,6 +1660,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 12,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1351,6 +1677,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 18,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1381,6 +1713,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1399,6 +1737,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 35,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1410,6 +1754,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 7,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1441,6 +1791,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1459,6 +1815,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 32,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1470,6 +1832,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 32,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1504,6 +1872,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -1531,6 +1905,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 19,
       ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1551,6 +1931,12 @@ function gsb_feature_book_ct_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 4,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',

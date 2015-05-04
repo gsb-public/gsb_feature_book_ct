@@ -62,13 +62,28 @@ function gsb_feature_book_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'views_content_pane' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'idea_story_related' => array(
         'custom_settings' => TRUE,
       ),
       'insight_featured_card' => array(
         'custom_settings' => TRUE,
+      ),
+      'news_listing' => array(
+        'custom_settings' => TRUE,
+      ),
+      'idea_story_latest_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_top_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_featured_content' => array(
+        'custom_settings' => TRUE,
+      ),
+      'alumni_reunion_agenda_list' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
@@ -111,6 +126,18 @@ function gsb_feature_book_ct_strongarm() {
             'weight' => '4',
             'visible' => TRUE,
           ),
+          'news_listing' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
+          'alumni_featured_content' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
+          'views_content_pane' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
@@ -118,7 +145,7 @@ function gsb_feature_book_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser_listing' => array(
-            'weight' => '15',
+            'weight' => '17',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -131,6 +158,18 @@ function gsb_feature_book_ct_strongarm() {
           ),
           'insight_featured_card' => array(
             'weight' => '15',
+            'visible' => FALSE,
+          ),
+          'news_listing' => array(
+            'weight' => '17',
+            'visible' => FALSE,
+          ),
+          'alumni_featured_content' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
+          'views_content_pane' => array(
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
