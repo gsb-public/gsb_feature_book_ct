@@ -75,6 +75,7 @@ features[field_instance][] = node-book-field_file_unlimited_public
 features[field_instance][] = node-book-field_image_single_public
 features[field_instance][] = node-book-field_link_single
 features[field_instance][] = node-book-field_link_unlimited
+features[field_instance][] = node-book-field_link_where_buy_unlimited
 features[field_instance][] = node-book-field_month
 features[field_instance][] = node-book-field_person_ref_unlimited
 features[field_instance][] = node-book-field_place_of_publication
