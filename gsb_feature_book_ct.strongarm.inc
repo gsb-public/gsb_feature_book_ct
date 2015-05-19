@@ -85,6 +85,15 @@ function gsb_feature_book_ct_strongarm() {
       'alumni_reunion_agenda_list' => array(
         'custom_settings' => FALSE,
       ),
+      'act_project_by_criteria' => array(
+        'custom_settings' => FALSE,
+      ),
+      'act_project_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_name' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -141,8 +150,8 @@ function gsb_feature_book_ct_strongarm() {
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '4',
-            'visible' => TRUE,
+            'weight' => '13',
+            'visible' => FALSE,
           ),
           'teaser_listing' => array(
             'weight' => '17',

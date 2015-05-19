@@ -339,6 +339,38 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_related|node|book|default';
+  $field_group->group_name = 'group_wrapper_related';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'book';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Related',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_link_unlimited',
+      1 => 'field_file_unlimited_public',
+      2 => 'field_person_ref_unlimited',
+      3 => 'field_related_idea_story',
+      4 => 'field_related_other_unlimited',
+      5 => 'related_title',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Related',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_wrapper_related|node|book|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_topics|node|book|default';
   $field_group->group_name = 'group_wrapper_topics';
   $field_group->entity_type = 'node';

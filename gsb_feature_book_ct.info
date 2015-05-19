@@ -62,6 +62,7 @@ features[field_group][] = group_tags|node|book|form
 features[field_group][] = group_taxonomy|node|book|form
 features[field_group][] = group_wrapper_meta|node|book|default
 features[field_group][] = group_wrapper_publisher|node|book|default
+features[field_group][] = group_wrapper_related|node|book|default
 features[field_group][] = group_wrapper_topics|node|book|default
 features[field_group][] = group_wrapper_topics|node|book|teaser_listing
 features[field_instance][] = node-book-field_academic_area_unlimited
