@@ -150,8 +150,8 @@ function gsb_feature_book_ct_strongarm() {
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '13',
-            'visible' => FALSE,
+            'weight' => '1',
+            'visible' => TRUE,
           ),
           'teaser_listing' => array(
             'weight' => '17',
