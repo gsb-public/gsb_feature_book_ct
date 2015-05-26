@@ -1379,7 +1379,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_person_ref_unlimited',
-    'label' => 'Alumni or Staff or PhD Student or MSx Student or Faculty',
+    'label' => 'People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2496,7 +2496,6 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Academic Area');
   t('Add multiple values to "dropbox" by clicking Add to select multiple academic areas. Selections do not display on the faculty profile.');
   t('Additional Topics');
-  t('Alumni or Staff or PhD Student or MSx Student or Faculty');
   t('Author & Co-Authors');
   t('Book Cover Image');
   t('Day');
@@ -2510,6 +2509,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
   t('Mentioned');
   t('Min. width: 150 px');
   t('Month');
+  t('People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)');
   t('Place of Publication');
   t('Program');
   t('Publication or Event');
