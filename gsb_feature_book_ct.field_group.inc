@@ -194,9 +194,10 @@ function gsb_feature_book_ct_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_link_unlimited',
-      1 => 'field_person_ref_unlimited',
-      2 => 'field_related_idea_story',
-      3 => 'field_related_other_unlimited',
+      1 => 'field_file_unlimited_public',
+      2 => 'field_person_ref_unlimited',
+      3 => 'field_related_idea_story',
+      4 => 'field_related_other_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
