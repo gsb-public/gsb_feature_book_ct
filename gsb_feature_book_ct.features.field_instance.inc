@@ -1084,7 +1084,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => '_blank',
+        'target' => 'user',
         'title' => '',
       ),
       'custom_add_another' => '',
