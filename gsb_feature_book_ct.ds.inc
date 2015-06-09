@@ -809,7 +809,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ',',
+          'suffix' => '<span class="comma">,</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
