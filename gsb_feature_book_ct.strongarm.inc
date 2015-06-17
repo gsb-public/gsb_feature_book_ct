@@ -94,6 +94,12 @@ function gsb_feature_book_ct_strongarm() {
       'alumni_name' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => TRUE,
+      ),
+      'expanded' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -147,6 +153,14 @@ function gsb_feature_book_ct_strongarm() {
             'weight' => '4',
             'visible' => TRUE,
           ),
+          'compact' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
+          'expanded' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
         ),
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
@@ -179,6 +193,14 @@ function gsb_feature_book_ct_strongarm() {
           ),
           'views_content_pane' => array(
             'weight' => '16',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),
