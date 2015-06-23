@@ -48,7 +48,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -374,7 +374,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -522,7 +522,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -538,7 +538,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -635,7 +635,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -826,7 +826,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1076,7 +1076,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 21,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -1311,7 +1311,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 24,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1523,7 +1523,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 13,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -1540,7 +1540,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 14,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1635,7 +1635,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -1951,7 +1951,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -2162,7 +2162,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2470,7 +2470,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 17,
       ),
       'idea_story_related' => array(
         'label' => 'above',

@@ -266,6 +266,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'suffix' => ' ',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -279,7 +280,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '<span class="comma">,</span>',
+          'suffix' => ', ',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -646,6 +647,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'suffix' => ' ',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -659,7 +661,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '<span class="comma">,</span>',
+          'suffix' => ', ',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
