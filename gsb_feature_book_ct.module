@@ -21,6 +21,9 @@ function gsb_feature_book_ct_form_book_node_form_alter(&$form, &$form_state) {
     $form['field_program_unlimited'][$language]['#title'] .= " " . theme('form_required_marker');
   }
 
+  $form['field_publication_type'][$language]['#default_value'] = 'book';
+  $form['field_publication_type']['#access'] = FALSE;
+
   // Hide alumni fields if the alumni checkbox is not checked.
   $form['field_program_unlimited']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
