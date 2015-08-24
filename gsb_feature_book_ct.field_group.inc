@@ -75,7 +75,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni/Past Participant Mention',
-    'weight' => '15',
+    'weight' => '14',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_unlimited',
@@ -106,6 +106,7 @@ function gsb_feature_book_ct_field_group_info() {
     'weight' => '39',
     'children' => array(
       0 => 'field_centers_research_programs',
+      1 => 'field_circle_topics',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -130,7 +131,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication Date',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_year_of_publication',
       1 => 'field_month',
@@ -249,7 +250,7 @@ function gsb_feature_book_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '16',
+    'weight' => '15',
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
