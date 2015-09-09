@@ -217,7 +217,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'compact';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -281,6 +281,20 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'suffix' => ', ',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_publication_type' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -572,7 +586,7 @@ function gsb_feature_book_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'expanded';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -662,6 +676,20 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'suffix' => ', ',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_publication_type' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -1184,14 +1212,16 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_authors',
-        2 => 'field_month',
-        3 => 'field_pub_date_day',
-        4 => 'field_year_of_publication',
+        0 => 'field_publication_type',
+        1 => 'title',
+        2 => 'field_authors',
+        3 => 'field_month',
+        4 => 'field_pub_date_day',
+        5 => 'field_year_of_publication',
       ),
     ),
     'fields' => array(
+      'field_publication_type' => 'ds_content',
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
       'field_month' => 'ds_content',
@@ -1302,18 +1332,20 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'title',
-        1 => 'field_authors',
-        2 => 'field_month',
-        3 => 'field_pub_date_day',
-        4 => 'field_year_of_publication',
-        5 => 'field_body',
+        0 => 'field_publication_type',
+        1 => 'title',
+        2 => 'field_authors',
+        3 => 'field_month',
+        4 => 'field_pub_date_day',
+        5 => 'field_year_of_publication',
+        6 => 'field_body',
       ),
       'right' => array(
-        6 => 'field_image_single_public',
+        7 => 'field_image_single_public',
       ),
     ),
     'fields' => array(
+      'field_publication_type' => 'left',
       'title' => 'left',
       'field_authors' => 'left',
       'field_month' => 'left',
