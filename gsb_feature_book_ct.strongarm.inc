@@ -196,11 +196,11 @@ function gsb_feature_book_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
