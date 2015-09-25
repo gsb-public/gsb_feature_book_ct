@@ -485,12 +485,14 @@ function gsb_feature_book_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Topics',
       'instance_settings' => array(
+        'classes' => 'group-wrapper-topics field-group-fieldset',
+        'description' => '',
         'show_label' => 1,
         'label_element' => 'h3',
-        'classes' => '',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $export['group_wrapper_topics|node|book|teaser_listing'] = $field_group;

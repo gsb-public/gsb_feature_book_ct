@@ -168,7 +168,7 @@ function gsb_feature_book_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser_listing' => array(
-            'weight' => '17',
+            'weight' => '24',
             'visible' => FALSE,
           ),
           'teaser' => array(

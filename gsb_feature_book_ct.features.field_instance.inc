@@ -181,7 +181,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 32,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -433,7 +433,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 23,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -568,7 +568,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 25,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -762,7 +762,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 31,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -857,7 +857,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 13,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -950,7 +950,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 19,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1200,7 +1200,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 29,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1318,7 +1318,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 30,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1435,7 +1435,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 18,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1664,7 +1664,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 17,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1759,7 +1759,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 28,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1858,7 +1858,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 20,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2098,7 +2098,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2197,7 +2197,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 26,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2296,7 +2296,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 21,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2393,7 +2393,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 16,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2491,7 +2491,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 15,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2580,7 +2580,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 34,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2701,7 +2701,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 27,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2790,7 +2790,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 22,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2880,7 +2880,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 33,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2937,6 +2937,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2952,6 +2953,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2967,6 +2969,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2994,6 +2997,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -3015,6 +3019,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -3030,6 +3035,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
