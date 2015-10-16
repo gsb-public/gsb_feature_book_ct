@@ -291,7 +291,8 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Book meta wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-meta',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -326,7 +327,8 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Publisher wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-publisher',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -363,7 +365,7 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Related',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'group-wrapper-related',
         'description' => '',
       ),
       'formatter' => 'collapsed',
@@ -391,7 +393,8 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -423,7 +426,8 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -455,12 +459,8 @@ function gsb_feature_book_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Topics',
       'instance_settings' => array(
-        'classes' => '',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-topics',
       ),
       'formatter' => 'open',
     ),
