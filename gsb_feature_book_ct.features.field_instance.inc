@@ -10,7 +10,7 @@
 function gsb_feature_book_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-book-field_academic_area_unlimited'
+  // Exported field_instance: 'node-book-field_academic_area_unlimited'.
   $field_instances['node-book-field_academic_area_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -116,7 +116,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_alumni_story'
+  // Exported field_instance: 'node-book-field_alumni_story'.
   $field_instances['node-book-field_alumni_story'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -213,7 +213,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_authors'
+  // Exported field_instance: 'node-book-field_authors'.
   $field_instances['node-book-field_authors'] = array(
     'bundle' => 'book',
     'custom_add_another' => 'Add Another Author',
@@ -355,7 +355,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_body'
+  // Exported field_instance: 'node-book-field_body'.
   $field_instances['node-book-field_body'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -503,7 +503,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_book_url_pdf_unlimited'
+  // Exported field_instance: 'node-book-field_book_url_pdf_unlimited'.
   $field_instances['node-book-field_book_url_pdf_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -599,7 +599,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_business_insight_topic'
+  // Exported field_instance: 'node-book-field_business_insight_topic'.
   $field_instances['node-book-field_business_insight_topic'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -703,7 +703,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_centers_research_programs'
+  // Exported field_instance: 'node-book-field_centers_research_programs'.
   $field_instances['node-book-field_centers_research_programs'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -793,7 +793,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_circle_topics'
+  // Exported field_instance: 'node-book-field_circle_topics'.
   $field_instances['node-book-field_circle_topics'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -887,7 +887,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_file_unlimited_public'
+  // Exported field_instance: 'node-book-field_file_unlimited_public'.
   $field_instances['node-book-field_file_unlimited_public'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1005,7 +1005,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_image_single_public'
+  // Exported field_instance: 'node-book-field_image_single_public'.
   $field_instances['node-book-field_image_single_public'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1080,7 +1080,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '',
         ),
         'type' => 'image',
@@ -1136,7 +1136,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_link_single'
+  // Exported field_instance: 'node-book-field_link_single'.
   $field_instances['node-book-field_link_single'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1254,7 +1254,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_link_unlimited'
+  // Exported field_instance: 'node-book-field_link_unlimited'.
   $field_instances['node-book-field_link_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1371,7 +1371,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_link_where_buy_unlimited'
+  // Exported field_instance: 'node-book-field_link_where_buy_unlimited'.
   $field_instances['node-book-field_link_where_buy_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1488,7 +1488,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_month'
+  // Exported field_instance: 'node-book-field_month'.
   $field_instances['node-book-field_month'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1598,7 +1598,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_person_ref_unlimited'
+  // Exported field_instance: 'node-book-field_person_ref_unlimited'.
   $field_instances['node-book-field_person_ref_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1697,7 +1697,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_place_of_publication'
+  // Exported field_instance: 'node-book-field_place_of_publication'.
   $field_instances['node-book-field_place_of_publication'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -1797,7 +1797,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_program_unlimited'
+  // Exported field_instance: 'node-book-field_program_unlimited'.
   $field_instances['node-book-field_program_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -1890,7 +1890,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_pub_date_day'
+  // Exported field_instance: 'node-book-field_pub_date_day'.
   $field_instances['node-book-field_pub_date_day'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2028,7 +2028,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_publication_type'
+  // Exported field_instance: 'node-book-field_publication_type'.
   $field_instances['node-book-field_publication_type'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2135,7 +2135,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_publisher'
+  // Exported field_instance: 'node-book-field_publisher'.
   $field_instances['node-book-field_publisher'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -2235,7 +2235,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_region_of_interest'
+  // Exported field_instance: 'node-book-field_region_of_interest'.
   $field_instances['node-book-field_region_of_interest'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2327,7 +2327,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_related_idea_story'
+  // Exported field_instance: 'node-book-field_related_idea_story'.
   $field_instances['node-book-field_related_idea_story'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2426,7 +2426,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_related_other_unlimited'
+  // Exported field_instance: 'node-book-field_related_other_unlimited'.
   $field_instances['node-book-field_related_other_unlimited'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2520,7 +2520,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_search_field'
+  // Exported field_instance: 'node-book-field_search_field'.
   $field_instances['node-book-field_search_field'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
@@ -2636,7 +2636,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_selected_reviews'
+  // Exported field_instance: 'node-book-field_selected_reviews'.
   $field_instances['node-book-field_selected_reviews'] = array(
     'bundle' => 'book',
     'custom_add_another' => 'Add Another Review',
@@ -2732,7 +2732,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_submit'
+  // Exported field_instance: 'node-book-field_submit'.
   $field_instances['node-book-field_submit'] = array(
     'bundle' => 'book',
     'deleted' => 0,
@@ -2821,7 +2821,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_tag'
+  // Exported field_instance: 'node-book-field_tag'.
   $field_instances['node-book-field_tag'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -2913,7 +2913,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_year_of_publication'
+  // Exported field_instance: 'node-book-field_year_of_publication'.
   $field_instances['node-book-field_year_of_publication'] = array(
     'bundle' => 'book',
     'custom_add_another' => '',
