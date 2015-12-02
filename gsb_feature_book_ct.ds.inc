@@ -798,6 +798,11 @@ function gsb_feature_book_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_year_of_publication' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -1468,6 +1473,7 @@ function gsb_feature_book_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|book|news_listing'] = $ds_layout;
 
