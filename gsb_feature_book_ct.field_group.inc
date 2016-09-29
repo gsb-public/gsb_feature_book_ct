@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_book_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_academic_area|node|book|form'] = $field_group;
+  $field_groups['group_academic_area|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -62,7 +62,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_additional_topics|node|book|form'] = $field_group;
+  $field_groups['group_additional_topics|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -90,7 +90,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_alumni_story|node|book|form'] = $field_group;
+  $field_groups['group_alumni_story|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -118,7 +118,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_centers|node|book|form'] = $field_group;
+  $field_groups['group_centers|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -152,34 +152,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_publication_date|node|book|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_regions_of_interest|node|book|form';
-  $field_group->group_name = 'group_regions_of_interest';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'book';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_taxonomy';
-  $field_group->data = array(
-    'label' => 'Regions of Interest',
-    'weight' => '38',
-    'children' => array(
-      0 => 'field_region_of_interest',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_regions_of_interest|node|book|form'] = $field_group;
+  $field_groups['group_publication_date|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -210,7 +183,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_related_content|node|book|form'] = $field_group;
+  $field_groups['group_related_content|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -237,7 +210,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_tags|node|book|form'] = $field_group;
+  $field_groups['group_tags|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -255,8 +228,7 @@ function gsb_feature_book_ct_field_group_info() {
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
       2 => 'group_centers',
-      3 => 'group_regions_of_interest',
-      4 => 'group_tags',
+      3 => 'group_tags',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -266,7 +238,7 @@ function gsb_feature_book_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|book|form'] = $field_group;
+  $field_groups['group_taxonomy|node|book|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -302,7 +274,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_meta|node|book|default'] = $field_group;
+  $field_groups['group_wrapper_meta|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -338,7 +310,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_publisher|node|book|default'] = $field_group;
+  $field_groups['group_wrapper_publisher|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -371,7 +343,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_wrapper_related|node|book|default'] = $field_group;
+  $field_groups['group_wrapper_related|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -404,7 +376,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|book|compact'] = $field_group;
+  $field_groups['group_wrapper_title|node|book|compact'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -437,7 +409,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|book|expanded'] = $field_group;
+  $field_groups['group_wrapper_title|node|book|expanded'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -465,7 +437,7 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_topics|node|book|default'] = $field_group;
+  $field_groups['group_wrapper_topics|node|book|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -495,7 +467,23 @@ function gsb_feature_book_ct_field_group_info() {
       'formatter' => 'collapsible',
     ),
   );
-  $export['group_wrapper_topics|node|book|teaser_listing'] = $field_group;
+  $field_groups['group_wrapper_topics|node|book|teaser_listing'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Academic Area');
+  t('Additional Topics');
+  t('Alumni/Past Participant Mention');
+  t('Book meta wrapper');
+  t('Centers');
+  t('Publication Date');
+  t('Publisher wrapper');
+  t('Related');
+  t('Related Content');
+  t('Tagging');
+  t('Tags');
+  t('Title wrapper');
+  t('Topics');
+
+  return $field_groups;
 }
