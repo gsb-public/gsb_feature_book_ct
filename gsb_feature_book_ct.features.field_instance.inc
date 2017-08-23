@@ -1081,7 +1081,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => 'content',
-          'image_style' => '',
+          'image_style' => 'compress',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -1625,6 +1625,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
@@ -2262,6 +2263,7 @@ function gsb_feature_book_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
